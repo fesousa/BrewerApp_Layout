@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Alterne as propriedades layout_width e layout_height
+do layout e da imagem para ver as diferenças -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#aaaaaa"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</FrameLayout>
