@@ -7,6 +7,23 @@ do layout e da imagem para ver as diferenças -->
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
+<!--    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textoInicial" />
+
+    <Button
+        android:id="@+id/botaoSair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textoInicial"
+        android:text="Sair" />-->
+
     <ListView
         android:id="@+id/listaElementos"
         android:layout_width="match_parent"
