@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/relativeLayout">
+
+    <TextView
+        android:id="@+id/mensagemInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mensagem_login"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textoUsuario"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mensagemInicio" />
+
+    <EditText
+        android:id="@+id/campoUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/textoUsuario"
+        app:layout_constraintLeft_toRightOf="@id/textoUsuario" />
+
+    <TextView
+        android:id="@+id/textoSenha"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:text="Senha"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/campoUsuario" />
+
+    <EditText
+        android:id="@+id/campoSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toTopOf="@id/textoSenha"
+        app:layout_constraintLeft_toRightOf="@id/textoSenha" />
+
+    <Button
+        android:id="@+id/botaoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        app:layout_constraintTop_toBottomOf="@id/campoSenha"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/imagemLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/botaoLogin"
+        app:layout_constraintVertical_bias="0.368" />
+
+
+</android.support.constraint.ConstraintLayout>
